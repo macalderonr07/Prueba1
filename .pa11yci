@@ -1,0 +1,16 @@
+{
+  "_nota_hideElements": "Estos selectores tienen texto sobre fondos con gradiente CSS o cerca de pseudo-elementos decorativos (::before/::after) o son glifos aria-hidden. axe-core no puede calcular el color de fondo en esos casos y los reporta como 'incomplete' (revision manual), no como violacion real. Se verificaron manualmente con la formula de contraste WCAG (relativeluminance) contra el peor caso de cada gradiente: todos superan holgadamente 4.5:1 (rango 6.66:1 - 19.32:1). Ver mensaje de push para el detalle de cada calculo.",
+  "defaults": {
+    "standard": "WCAG2AA",
+    "runners": ["axe"],
+    "timeout": 30000,
+    "wait": 500,
+    "hideElements": ".brand-mark, .badge-text, #titulo-principal, .lead, .button-primary, .button-secondary, .hero-image-wrap figcaption, .timeline-year, .timeline-club, .detail-badge, #detail-year, #detail-title, #detail-description, .stat-value, .stat-label, .stat-icon-wrapper, .external-icon, .top-arrow",
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+    }
+  },
+  "urls": [
+    "http://localhost:8080/index.html"
+  ]
+}

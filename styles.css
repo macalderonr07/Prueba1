@@ -13,7 +13,7 @@
   /* Colores de acento (Oro Champions & Carmesí sutil) */
   --accent-gold: #d48b1d;
   --accent-gold-light: #f5b041;
-  --accent-gold-dark: #b4700f;
+  --accent-gold-dark: #aa6605; /* Contraste 4.56:1 sobre #ffffff (AA) */
   --accent-gold-glow: rgba(212, 139, 29, 0.25);
   --accent-crimson: #dc2626;
 
